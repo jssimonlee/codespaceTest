@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오사카 여행 완벽 가이드 | Osaka Travel Guide</title>
+    <meta name="description" content="오사카 가볼 만한 곳, 맛집 추천, 교통 패스 선택 가이드, 여행 예산 계산기, 필수 팁까지! 완벽한 오사카 여행을 위한 올인원 가이드 사이트.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation Bar -->
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-accent">OSAKA</span> GUIDE
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active" id="link-about"><i class="fa-solid fa-plane-departure"></i> 개요</a>
+                <a href="#attractions" class="nav-link" id="link-attractions"><i class="fa-solid fa-map-location-dot"></i> 명소</a>
+                <a href="#transport" class="nav-link" id="link-transport"><i class="fa-solid fa-train"></i> 교통패스</a>
+                <a href="#weather-pack" class="nav-link" id="link-weather"><i class="fa-solid fa-cloud-sun-rain"></i> 날씨&체크리스트</a>
+                <a href="#budget" class="nav-link" id="link-budget"><i class="fa-solid fa-wallet"></i> 예산 계산기</a>
+                <a href="#tips" class="nav-link" id="link-tips"><i class="fa-solid fa-lightbulb"></i> 필수 팁</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="화면 모드 변경">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-btn" aria-label="메뉴 열기">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo-accent">OSAKA</span> GUIDE
+            <button id="close-drawer-btn" aria-label="메뉴 닫기"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="drawer-links">
+            <a href="#about" class="drawer-link"><i class="fa-solid fa-plane-departure"></i> 개요</a>
+            <a href="#attractions" class="drawer-link"><i class="fa-solid fa-map-location-dot"></i> 명소</a>
+            <a href="#transport" class="drawer-link"><i class="fa-solid fa-train"></i> 교통패스</a>
+            <a href="#weather-pack" class="drawer-link"><i class="fa-solid fa-cloud-sun-rain"></i> 날씨&체크리스트</a>
+            <a href="#budget" class="drawer-link"><i class="fa-solid fa-wallet"></i> 예산 계산기</a>
+            <a href="#tips" class="drawer-link"><i class="fa-solid fa-lightbulb"></i> 필수 팁</a>
+        </nav>
+    </div>
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">완벽한 오사카 여행을 위한 가이드</span>
+            <h1 class="hero-title">천하의 부엌, <br><span class="highlight">오사카</span>로 떠나다</h1>
+            <p class="hero-desc">
+                화려한 도톤보리의 네온사인부터 웅장한 오사카성, 짜릿한 유니버설 스튜디오와 군침 도는 먹거리까지. 당신의 오사카 여행이 더 편안하고 특별해질 수 있도록 모든 필수 정보를 모았습니다.
+            </p>
+            <div class="hero-btns">
+                <a href="#attractions" class="btn btn-primary" id="btn-explore">명소 둘러보기 <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#budget" class="btn btn-secondary" id="btn-calc-direct">예산 짜기 <i class="fa-solid fa-calculator"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-down">
+            <span>스크롤하여 탐색</span>
+            <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- Section: About Osaka (개요) -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">OSAKA AT A GLANCE</span>
+                <h2 class="section-title">오사카 기초 정보</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="info-grid">
+                <!-- Info Cards -->
+                <div class="info-card">
+                    <div class="info-icon-wrapper">
+                        <i class="fa-solid fa-clock-three"></i>
+                    </div>
+                    <h3>비행 시간 & 시차</h3>
+                    <p class="info-text">인천/김포 출발 기준 <strong>약 1시간 40분</strong> 소요됩니다. 시차는 한국과 <strong>동일(GMT+9)</strong>하여 시차 적응이 필요 없습니다.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon-wrapper">
+                        <i class="fa-solid fa-passport"></i>
+                    </div>
+                    <h3>비자 & 입국 등록</h3>
+                    <p class="info-text">대한민국 국적자는 관광 목적으로 <strong>최대 90일 무비자</strong> 입국이 가능합니다. 신속한 입국 심사를 위해 <strong>Visit Japan Web</strong> 등록을 사전에 완료하는 것을 추천합니다.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon-wrapper">
+                        <i class="fa-solid fa-yen-sign"></i>
+                    </div>
+                    <h3>통화 & 환율</h3>
+                    <p class="info-text">일본 <strong>엔화(JPY, ¥)</strong>를 사용합니다. 최근 100엔당 대략 850~950원 선을 유지하고 있습니다. 대형 점포는 카드 결제가 잘 되지만, 로컬 맛집이나 버스 등은 여전히 <strong>현금이 필요</strong>합니다.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon-wrapper">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>전압 & 콘센트</h3>
+                    <p class="info-text">일본은 <strong>110V, 60Hz</strong>를 사용하며 플러그 모양이 11자 형태(일명 돼지코, A타입)입니다. 스마트 기기 충전을 위해 <strong>멀티 어댑터</strong> 또는 변환 플러그를 꼭 지참하세요.</p>
+                </div>
+            </div>
+
+            <!-- Quick Tip Box -->
+            <div class="glass-box highlight-box">
+                <div class="box-icon"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="box-content">
+                    <h4>트래블로그 & 트래블월렛 카드 활용 꿀팁!</h4>
+                    <p>요즘 오사카 여행은 환전 수수료가 없는 외화 충전식 카드(트래블로그, 트래블월렛 등)를 사용하면 매우 편리합니다. 오사카 시내 곳곳의 이온(AEON) ATM 또는 세븐일레븐 ATM에서 수수료 없이 엔화 현찰을 인출할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Attractions (명소) -->
+    <section id="attractions" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">WHERE TO GO</span>
+                <h2 class="section-title">오사카 대표 명소</h2>
+                <p class="section-subtitle">오사카에 가면 꼭 방문해봐야 할 인기 관광지를 필터별로 살펴보세요.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="all">전체보기</button>
+                <button class="filter-btn" data-filter="landmark"><i class="fa-solid fa-monument"></i> 랜드마크</button>
+                <button class="filter-btn" data-filter="shopping"><i class="fa-solid fa-bag-shopping"></i> 쇼핑 & 거리</button>
+                <button class="filter-btn" data-filter="entertainment"><i class="fa-solid fa-gamepad"></i> 테마파크</button>
+                <button class="filter-btn" data-filter="food"><i class="fa-solid fa-utensils"></i> 맛집 탐방</button>
+            </div>
+
+            <!-- Attraction Grid -->
+            <div class="attraction-grid" id="attraction-container">
+                <!-- Card 1: Dotonbori -->
+                <div class="attraction-card" data-category="shopping food" id="card-dotonbori">
+                    <div class="card-img-wrapper">
+                        <img src="images/osaka_hero.jpg" alt="도톤보리 야경">
+                        <span class="card-badge">쇼핑 & 맛집</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>도톤보리 & 신사이바시</h3>
+                        <p class="card-summary">오사카의 심장이자 밤낮없이 활기찬 네온사인의 거리. 글리코상 앞 인증샷은 필수!</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 소요시간: 2~3시간</span>
+                            <span><i class="fa-solid fa-coins"></i> 요금: 무료 (쇼핑/식비 제외)</span>
+                        </div>
+                        <button class="btn-card-detail" data-target="detail-dotonbori">상세 정보 보기 <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Osaka Castle -->
+                <div class="attraction-card" data-category="landmark" id="card-castle">
+                    <div class="card-img-wrapper">
+                        <img src="images/osaka_castle.jpg" alt="오사카성 전경">
+                        <span class="card-badge">역사 & 문화</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>오사카성 (大阪城)</h3>
+                        <p class="card-summary">웅장한 해자와 화려한 천수각이 돋보이는 오사카 최고의 역사 유적지이자 벚꽃 명소.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 소요시간: 1~2시간</span>
+                            <span><i class="fa-solid fa-coins"></i> 요금: 천수각 600엔 (주유패스 무료)</span>
+                        </div>
+                        <button class="btn-card-detail" data-target="detail-castle">상세 정보 보기 <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Shinsekai -->
+                <div class="attraction-card" data-category="landmark food" id="card-shinsekai">
+                    <div class="card-img-wrapper">
+                        <img src="images/shinsekai.jpg" alt="신세카이와 츠텐카쿠">
+                        <span class="card-badge">복고풍 & 거리</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>신세카이 & 츠텐카쿠</h3>
+                        <p class="card-summary">1900년대 레트로 일본 감성이 고스란히 남아있는 거리. 오사카 대표 꼬치 튀김인 '쿠시카츠'의 본고장.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 소요시간: 1~2시간</span>
+                            <span><i class="fa-solid fa-coins"></i> 요금: 무료 (전망대 900엔~)</span>
+                        </div>
+                        <button class="btn-card-detail" data-target="detail-shinsekai">상세 정보 보기 <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Osaka Food -->
+                <div class="attraction-card" data-category="food" id="card-food">
+                    <div class="card-img-wrapper">
+                        <img src="images/osaka_food.jpg" alt="타코야끼와 오코노미야끼">
+                        <span class="card-badge">오사카 미식</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>오사카 스트리트 푸드</h3>
+                        <p class="card-summary">'먹다가 망한다'는 오사카! 정통 타코야끼, 촉촉한 오코노미야끼, 바삭한 쿠시카츠를 맛보세요.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-clock"></i> 소요시간: 매 끼니마다!</span>
+                            <span><i class="fa-solid fa-coins"></i> 요금: 길거리 간식 500엔 내외</span>
+                        </div>
+                        <button class="btn-card-detail" data-target="detail-food">상세 정보 보기 <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detail Modals/Drawers (Dynamic overlay via JS) -->
+            <div id="detail-modal" class="modal">
+                <div class="modal-content">
+                    <button class="modal-close-btn" id="modal-close">&times;</button>
+                    <div class="modal-body-content" id="modal-body-content">
+                        <!-- Content will be injected dynamically via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Transport (교통 패스 가이드) -->
+    <section id="transport" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">GETTING AROUND</span>
+                <h2 class="section-title">오사카 교통 & 패스 완벽 정리</h2>
+                <p class="section-subtitle">복잡한 일본의 지하철/철도 시스템! 나에게 딱 맞는 패스를 찾아보세요.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="transport-layout">
+                <!-- Airport Access Guide -->
+                <div class="transport-airport">
+                    <h3><i class="fa-solid fa-plane-arrival"></i> 간사이 공항에서 시내로 이동하기</h3>
+                    <div class="airport-routes">
+                        <!-- Option 1 -->
+                        <div class="route-option">
+                            <div class="route-badge nankai">난카이 전철 (Rap:t / 급행)</div>
+                            <div class="route-details">
+                                <p><strong>추천 목적지:</strong> 난바, 신사이바시, 덴덴타운</p>
+                                <p><strong>특징:</strong> 난바까지 환승 없이 가장 빠르게 이동 가능. 특급 라피트(Rap:t)는 약 38분 소요(전석 지정석), 공항급행은 약 44분 소요됩니다.</p>
+                                <div class="route-pricing">
+                                    <span>소요시간: 38~45분</span>
+                                    <span>가격: 라피트 약 1,350엔 / 급행 970엔</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Option 2 -->
+                        <div class="route-option">
+                            <div class="route-badge jr">JR 특급 하루카 (Haruka)</div>
+                            <div class="route-details">
+                                <p><strong>추천 목적지:</strong> 텐노지, 우메다(오사카역), 신오사카, 교토</p>
+                                <p><strong>특징:</strong> 키티 래핑 열차로 유명하며 우메다나 신오사카, 혹은 교토로 바로 넘어갈 때 가장 빠르고 쾌적합니다.</p>
+                                <div class="route-pricing">
+                                    <span>소요시간: 텐노지 35분 / 신오사카 50분</span>
+                                    <span>가격: 텐노지 약 1,300엔~ / 우메다 약 1,800엔~</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Option 3 -->
+                        <div class="route-option">
+                            <div class="route-badge bus">리무진 버스</div>
+                            <div class="route-details">
+                                <p><strong>추천 목적지:</strong> 우메다 주요 호텔 앞, 유니버설 스튜디오 재팬</p>
+                                <p><strong>특징:</strong> 짐이 무겁거나 숙소가 리무진 정류장 근처인 경우, 혹은 USJ로 직행할 때 짐을 싣고 편안히 앉아갈 수 있어 편리합니다.</p>
+                                <div class="route-pricing">
+                                    <span>소요시간: 우메다 약 50분 / USJ 약 70분</span>
+                                    <span>가격: 우메다 편도 1,600엔</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pass Selector Interactive Tool -->
+                <div class="pass-advisor glass-box">
+                    <h3><i class="fa-solid fa-compass"></i> 나에게 맞는 교통패스 진단</h3>
+                    <p class="advisor-intro">나의 여행 성향에 맞는 최적의 교통권을 추천해 드립니다. 아래 질문에 체크해 보세요!</p>
+                    
+                    <div id="pass-quiz">
+                        <!-- Step 1 -->
+                        <div class="quiz-question" id="q-1">
+                            <p class="question-text">1. 이번 오사카 여행 중 <strong>교토, 고베, 나라</strong> 등 주변 도시로 갈 계획이 있나요?</p>
+                            <div class="quiz-options">
+                                <button class="quiz-opt-btn" data-value="out-city">예 (외곽 도시 당일치기 있음)</button>
+                                <button class="quiz-opt-btn" data-value="in-city">아니오 (오사카 시내 위주)</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 (Conditional) -->
+                        <div class="quiz-question hidden" id="q-in-city">
+                            <p class="question-text">2. 오사카 시내의 <strong>주요 관광지(오사카성 천수각, 햅파이브, 공중정원 등)</strong>를 하루에 3개 이상 입장할 예정인가요?</p>
+                            <div class="quiz-options">
+                                <button class="quiz-opt-btn" data-value="amazing-pass">예, 관광지 무료 입장을 누리고 싶습니다.</button>
+                                <button class="quiz-opt-btn" data-value="subway-pass">아니오, 맛집과 쇼핑 위주로 편하게 다닐래요.</button>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question hidden" id="q-out-city">
+                            <p class="question-text">2. 외곽 도시 중 어디를 방문하고 싶으신가요?</p>
+                            <div class="quiz-options">
+                                <button class="quiz-opt-btn" data-value="kansai-thru">교토와 고베, 나라를 골고루 가고 싶습니다.</button>
+                                <button class="quiz-opt-btn" data-value="hankyu-hanshin">교토나 고베 중 한두 곳만 가성비 있게 가고 싶습니다.</button>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="quiz-result hidden" id="quiz-result-box">
+                            <div class="result-header">추천하는 교통 수단/패스</div>
+                            <div class="result-card" id="recommended-pass-card">
+                                <!-- Dynamic recommendation content goes here -->
+                            </div>
+                            <button class="btn btn-secondary btn-sm" id="btn-restart-quiz">다시 진단하기 <i class="fa-solid fa-rotate-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Weather & Checklist (날씨 & 준비물 체크리스트) -->
+    <section id="weather-pack" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">PREPARATION</span>
+                <h2 class="section-title">날씨와 옷차림 & 여행 준비물</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="weather-pack-layout">
+                <!-- Weather Tab Section -->
+                <div class="weather-card-box glass-box">
+                    <h3><i class="fa-solid fa-cloud-sun"></i> 시즌별 날씨 & 옷차림</h3>
+                    <div class="weather-tabs">
+                        <button class="weather-tab-btn active" data-season="spring">🌸 봄 (3-5월)</button>
+                        <button class="weather-tab-btn" data-season="summer">☀️ 여름 (6-8월)</button>
+                        <button class="weather-tab-btn" data-season="autumn">🍁 가을 (9-11월)</button>
+                        <button class="weather-tab-btn" data-season="winter">❄️ 겨울 (12-2월)</button>
+                    </div>
+                    <div class="weather-tab-content" id="weather-content">
+                        <!-- Loaded via JS dynamically -->
+                    </div>
+                </div>
+
+                <!-- Interactive Packing Checklist -->
+                <div class="checklist-box glass-box">
+                    <h3><i class="fa-solid fa-clipboard-check"></i> 오사카 여행 필수 준비물 Checklist</h3>
+                    <p class="checklist-desc">준비가 끝난 아이템을 체크해 보세요. 브라우저에 저장되어 언제든 확인할 수 있습니다.</p>
+                    
+                    <div class="checklist-input-group">
+                        <input type="text" id="new-item-input" placeholder="나만의 준비물 추가 (예: 돼지코 2개)..." aria-label="새로운 준비물 입력">
+                        <button id="add-item-btn" aria-label="준비물 추가"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                    <ul class="checklist-ul" id="checklist-items">
+                        <!-- Items populated by JS -->
+                    </ul>
+
+                    <div class="checklist-actions">
+                        <button id="reset-checklist-btn" class="btn-text"><i class="fa-solid fa-trash-can"></i> 전체 초기화</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Budget Calculator (예산 계산기) -->
+    <section id="budget" class="section-padding">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">COST ESTIMATOR</span>
+                <h2 class="section-title">오사카 여행 예산 계산기</h2>
+                <p class="section-subtitle">인원, 일정, 여행 스타일에 맞춘 대략적인 지출 예산을 실시간으로 계산해보세요.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="calculator-layout">
+                <!-- Inputs -->
+                <div class="calc-inputs-panel glass-box">
+                    <h3><i class="fa-solid fa-sliders"></i> 여행 조건 설정</h3>
+                    
+                    <div class="input-field">
+                        <label for="calc-days">여행 일정 (일수)</label>
+                        <div class="number-input-wrapper">
+                            <button class="num-btn minus" data-target="calc-days">-</button>
+                            <input type="number" id="calc-days" value="3" min="1" max="30">
+                            <button class="num-btn plus" data-target="calc-days">+</button>
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="calc-people">여행 인원 (명)</label>
+                        <div class="number-input-wrapper">
+                            <button class="num-btn minus" data-target="calc-people">-</button>
+                            <input type="number" id="calc-people" value="2" min="1" max="10">
+                            <button class="num-btn plus" data-target="calc-people">+</button>
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="calc-flight">1인당 왕복 항공권 비용 (KRW)</label>
+                        <input type="range" id="calc-flight" min="150000" max="800000" step="10000" value="350000">
+                        <div class="range-value" id="flight-val">350,000 원</div>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="calc-hotel">1박당 숙소 등급 (2인 1실 기준)</label>
+                        <select id="calc-hotel">
+                            <option value="50000">호스텔 / 캡슐 호텔 (1박 약 ¥5,000)</option>
+                            <option value="120000" selected>가성비 비즈니스 호텔 (1박 약 ¥12,000)</option>
+                            <option value="250000">4성급 미드레인지 호텔 (1박 약 ¥25,000)</option>
+                            <option value="500000">5성급 럭셔리 호텔/료칸 (1박 약 ¥50,000)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="calc-food">1인당 하루 식사 스타일</label>
+                        <select id="calc-food">
+                            <option value="4000">가성비 (라멘, 편의점 위주 - 하루 약 ¥4,000)</option>
+                            <option value="8000" selected>보통 맛집 탐방 (스시, 와규 포함 - 하루 약 ¥8,000)</option>
+                            <option value="15000">식도락 플렉스 (파인다이닝, 고급 요리 - 하루 약 ¥15,000)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="calc-shopping">1인당 총 쇼핑 & 예비 비용 (KRW)</label>
+                        <input type="range" id="calc-shopping" min="50000" max="1500000" step="50000" value="200000">
+                        <div class="range-value" id="shopping-val">200,000 원</div>
+                    </div>
+                </div>
+
+                <!-- Outputs / Visual breakdown -->
+                <div class="calc-results-panel glass-box">
+                    <h3><i class="fa-solid fa-chart-pie"></i> 예상 총 예산 결과</h3>
+                    
+                    <div class="total-cost-box">
+                        <div class="total-title">2인 기준 총 예상 비용</div>
+                        <div class="total-price-krw" id="total-krw">0 원</div>
+                        <div class="total-price-jpy" id="total-jpy">환산 엔화: ¥0 (대략)</div>
+                        <span class="exchange-rate-info">* 적용 환율: 100엔 = 900원 기준</span>
+                    </div>
+
+                    <div class="breakdown-chart">
+                        <h4>비용 상세 구성비</h4>
+                        <div class="chart-container">
+                            <div class="chart-bar" id="bar-flight" style="width: 0%;" data-label="항공"><span class="bar-text">항공</span></div>
+                            <div class="chart-bar" id="bar-hotel" style="width: 0%;" data-label="숙박"><span class="bar-text">숙박</span></div>
+                            <div class="chart-bar" id="bar-food" style="width: 0%;" data-label="식비"><span class="bar-text">식비</span></div>
+                            <div class="chart-bar" id="bar-shopping" style="width: 0%;" data-label="쇼핑"><span class="bar-text">쇼핑</span></div>
+                        </div>
+                    </div>
+
+                    <div class="cost-summary-list">
+                        <div class="summary-item">
+                            <span><i class="fa-solid fa-plane text-color-1"></i> 총 항공권 비용:</span>
+                            <strong id="summary-flight">0원</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span><i class="fa-solid fa-hotel text-color-2"></i> 총 숙박 비용:</span>
+                            <strong id="summary-hotel">0원</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span><i class="fa-solid fa-utensils text-color-3"></i> 총 식비 비용:</span>
+                            <strong id="summary-food">0원</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span><i class="fa-solid fa-gift text-color-4"></i> 총 쇼핑 & 기타 비용:</span>
+                            <strong id="summary-shopping">0원</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Travel Tips & Japanese (필수 팁 & 기본 회화) -->
+    <section id="tips" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="sub-title">ESSENTIAL INFO</span>
+                <h2 class="section-title">오사카 여행 필수 팁 & 상황별 표현</h2>
+                <p class="section-subtitle">현지에서 실수하지 않기 위해 꼭 알아야 할 팁과 간단한 기초 회화 카드입니다.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Tab Buttons for Tips vs Language -->
+            <div class="tabs-tip-lang">
+                <button class="tip-lang-btn active" id="tab-btn-tips">💡 필수 문화 & 꿀팁</button>
+                <button class="tip-lang-btn" id="tab-btn-lang">🗣️ 여행 기초 일본어</button>
+            </div>
+
+            <!-- Content Panel 1: Tips -->
+            <div class="tip-panel" id="panel-tips">
+                <div class="tip-card-grid">
+                    <!-- Tip 1 -->
+                    <div class="tip-card-item">
+                        <div class="tip-header">
+                            <i class="fa-solid fa-right-left"></i>
+                            <h4>에스컬레이터는 우측 한 줄 서기</h4>
+                        </div>
+                        <p>도쿄를 포함한 간동(오른쪽 비우기) 지방과 달리, <strong>오사카는 에스컬레이터에서 오른쪽에 서고</strong> 왼쪽을 비워두는 것이 현지 관례입니다. 단, 최근 안전을 위해 걷지 않기를 권장하기도 합니다.</p>
+                    </div>
+
+                    <!-- Tip 2 -->
+                    <div class="tip-card-item">
+                        <div class="tip-header">
+                            <i class="fa-solid fa-percent"></i>
+                            <h4>소비세와 면세(Tax-Free) 기준</h4>
+                        </div>
+                        <p>일본의 소비세는 원칙적으로 10%입니다. 동일한 상점(또는 쇼핑몰)에서 하루 동안 <strong>세금 제외 5,000엔 이상(세금 포함 5,500엔 이상)</strong> 구매 시 면세 혜택을 받을 수 있습니다. 결제 시 꼭 실물 여권을 제시하세요.</p>
+                    </div>
+
+                    <!-- Tip 3 -->
+                    <div class="tip-card-item">
+                        <div class="tip-header">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <h4>팁 문화 없음 & 잔돈 계산</h4>
+                        </div>
+                        <p>일본은 <strong>팁 문화가 전혀 없습니다</strong>. 식당, 택시 등에서 거스름돈을 그대로 전부 돌려받으시면 됩니다. 식당 계산 시 점원이 돈 트레이(코인 쟁반)에 현금을 놓을 수 있게 준비해 둔 곳이 많으니 트레이에 돈을 올려두세요.</p>
+                    </div>
+
+                    <!-- Tip 4 -->
+                    <div class="tip-card-item">
+                        <div class="tip-header">
+                            <i class="fa-solid fa-trash"></i>
+                            <h4>쓰레기는 가방에 넣거나 편의점에</h4>
+                        </div>
+                        <p>일본의 길거리에는 쓰레기통이 거의 없습니다. 테이크아웃 음료수나 쓰레기가 발생하면 <strong>가방에 보관하여 숙소로 가져가거나</strong>, 편의점에서 물건을 구매하고 편의점 내/외부의 분리수거 쓰레기통을 이용하세요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Panel 2: Language (Interactive flip cards) -->
+            <div class="tip-panel hidden" id="panel-lang">
+                <div class="lang-selector">
+                    <button class="lang-cat-btn active" data-cat="common">기본 회화</button>
+                    <button class="lang-cat-btn" data-cat="restaurant">식당에서</button>
+                    <button class="lang-cat-btn" data-cat="shopping">쇼핑할 때</button>
+                    <button class="lang-cat-btn" data-cat="emergency">긴급 상황</button>
+                </div>
+
+                <div class="phrase-grid" id="phrase-container">
+                    <!-- Populated dynamically by JS for card flipping -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="footer-logo"><span class="logo-accent">OSAKA</span> GUIDE</p>
+            <p class="footer-desc">당신의 안전하고 즐거운 오사카 여행을 응원합니다. Bon Voyage!</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Osaka Travel Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- App Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
